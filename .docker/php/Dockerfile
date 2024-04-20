@@ -19,16 +19,14 @@ RUN apt-get install -y libfreetype6-dev libjpeg62-turbo-dev libpng-dev && \
 docker-php-ext-configure gd --with-freetype=/usr/include/ --with-jpeg=/usr/include/ && \
 docker-php-ext-install gd
 
-# redis
-RUN pecl install redis && docker-php-ext-enable redis
 
 # pcov
 RUN pecl install pcov && docker-php-ext-enable pcov
 
 # Xdebug
-# RUN pecl install xdebug \
-# && docker-php-ext-enable xdebug \
-# && echo ";zend_extension=xdebug" > /usr/local/etc/php/conf.d/docker-php-ext-xdebug.ini
+RUN pecl install xdebug \ 
+&& docker-php-ext-enable xdebug \
+&& echo ";zend_extension=xdebug" > /usr/local/etc/php/conf.d/docker-php-ext-xdebug.ini
 
 # Node.js, NPM, Yarn
 RUN curl -sL https://deb.nodesource.com/setup_18.x | bash -
@@ -53,3 +51,12 @@ RUN git clone https://github.com/seebi/dircolors-solarized
 
 EXPOSE 5173
 WORKDIR /var/www
+
+RUN chmod 777 -R /var/www
+#RUN php artisan optimize
+#RUN php artisan config:clear
+#RUN php artisan key:generate
+#RUN php artisan migrate
+#RUN npm rebuild node-sass
+#RUN npm install && npm run dev
+
