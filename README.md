@@ -20,9 +20,19 @@
 
 
 ## Acessos
-`` 
+``
 http://localhost //Aplicação
+``
+``
 http://localhost:8080 //phpmyadmin
+``
+
+## Documentação completa da API
+``
+http://localhost/docs
+``
+``
+https://documenter.getpostman.com/view/8212927/2sA3Boargo
 ``
 
 ## Preview do Projeto
@@ -36,10 +46,3 @@ http://localhost:8080 //phpmyadmin
 ![App Screenshot](/Docs/img7.png)
 ![App Screenshot](/Docs/img8.png)
 ![App Screenshot](/Docs/img9.png)
-
-
-## Documentação completa da API
-``
-http://localhost/docs
-https://documenter.getpostman.com/view/8212927/2sA3Boargo
-``
