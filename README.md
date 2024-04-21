@@ -25,6 +25,18 @@ http://localhost //Aplicação
 http://localhost:8080 //phpmyadmin
 ``
 
+## Preview do Projeto
+
+![App Screenshot](/Docs/img1.png)
+![App Screenshot](/Docs/img2.png)
+![App Screenshot](/Docs/img3.png)
+![App Screenshot](/Docs/img4.png)
+![App Screenshot](/Docs/img5.png)
+![App Screenshot](/Docs/img6.png)
+![App Screenshot](/Docs/img7.png)
+![App Screenshot](/Docs/img8.png)
+![App Screenshot](/Docs/img9.png)
+
 
 ## Documentação completa da API
 ``
