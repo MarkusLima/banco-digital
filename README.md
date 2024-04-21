@@ -15,7 +15,8 @@
 - docker compose -f "docker-compose.yml" up -d --build
 - Entre no docker
 - execute composer install
-- php artisan migrate
+- execute php artisan migrate
+- renomeie .env.exemple para .env
 
 
 ## Acessos
